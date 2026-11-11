@@ -47,7 +47,7 @@ export default function About() {
               Sobre SSJ Contratistas
             </p>
             <h2 className="font-display text-4xl font-bold text-navy sm:text-5xl">
-              Contratista de obra y minería con base en Puno
+              Contratista de obra y minería
             </h2>
             <div className="mt-6 max-w-prose space-y-4 text-lg leading-relaxed text-slate-700">
               <p>
