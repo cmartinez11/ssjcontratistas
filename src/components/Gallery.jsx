@@ -11,7 +11,7 @@ export default function Gallery() {
               Experiencia Operativa Comprobada
             </p>
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-navy">
-              Proyectos y Trabajos Ejecutados en Puno
+              Proyectos y Trabajos Ejecutados
             </h2>
             <p className="mt-3 max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed">
               Registro de obras civiles, tendido de líneas HDPE, estructuras metalmecánicas y servicios mineros realizados en condiciones de alta exigencia climática y geográfica.
@@ -80,14 +80,14 @@ export default function Gallery() {
               ¿Requiere dossier de calidad o referencias comerciales de obra?
             </h4>
             <p className="mt-1 text-sm text-slate-600">
-              Podemos facilitarle fichas técnicas detalladas y actas de conformidad de proyectos ejecutados en la región.
+              Podemos facilitarle fichas técnicas detalladas y actas de conformidad de proyectos.
             </p>
           </div>
           <a
             href="#contacto"
             className="shrink-0 rounded-sm bg-navy px-6 py-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-white hover:bg-slate-800 transition-colors shadow-sm"
           >
-            Contactar a Gerencia
+            Contactar
           </a>
         </div>
       </div>

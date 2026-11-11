@@ -55,7 +55,7 @@ export default function Contact() {
             Oficina Central & Operaciones
           </p>
           <h2 className="font-display text-4xl font-bold text-navy sm:text-5xl">Canales de Contacto Directo</h2>
-          <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-600">Comuníquese con nuestra oficina en Puno o con nuestra gerencia de operaciones para coordinar requerimientos y visitas técnicas a faena.</p>
+          <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-600">Comuníquese con nuestra oficina para coordinar requerimientos y visitas técnicas a faena.</p>
           <ul className="mt-8 divide-y divide-navy/15 border-y border-navy/15">
             {rows.map(([Icon, label, value, href]) => (
               <li key={label} className="flex gap-4 py-4">

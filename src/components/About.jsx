@@ -11,9 +11,9 @@ export default function About() {
           <p className="text-xs font-bold tracking-widest text-amber-600 uppercase mb-2">
             Sobre SSJ Contratistas
           </p>
-          <h2 className="font-display text-4xl font-bold text-navy sm:text-5xl">Contratista de obra y minería con base en Puno</h2>
+          <h2 className="font-display text-4xl font-bold text-navy sm:text-5xl">Contratista de obra y minería</h2>
           <div className="mt-6 max-w-prose space-y-4 text-lg leading-relaxed">
-            <p>SSJ Contratistas ejecuta obras y servicios para el sector minero y de construcción en el sur del Perú. Con base operativa en Puno y experiencia en faenas sobre los 3,800 m.s.n.m., combinamos solvencia técnica, maquinaria pesada y personal altamente calificado.</p>
+            <p>SSJ Contratistas ejecuta obras y servicios para el sector minero y de construcción en Perú. Amplia experiencia en faenas sobre los 3,800 m.s.n.m., combinamos solvencia técnica, maquinaria pesada y personal altamente calificado.</p>
             <p className="text-sm text-slate-600">Reunimos ingeniería, obra civil, metalmecánica, electricidad y termofusión HDPE para que la empresa contratante coordine de forma ágil y transparente con una sola gerencia.</p>
           </div>
           <dl className="mt-10 divide-y divide-navy/15 border-y border-navy/15">

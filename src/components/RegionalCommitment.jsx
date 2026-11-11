@@ -89,7 +89,7 @@ export default function RegionalCommitment() {
           <div className="text-center sm:text-left">
             <p className="font-display text-xl font-bold">Operaciones Mineras Homologadas y Seguras</p>
             <p className="mt-1 text-xs sm:text-sm text-slate-300">
-              Trabajamos bajo estándares corporativos mineros internacionales aplicados a la realidad de la región Puno.
+              Trabajamos bajo estándares corporativos mineros internacionales.
             </p>
           </div>
           <a
