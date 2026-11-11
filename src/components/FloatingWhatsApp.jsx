@@ -1,7 +1,7 @@
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/51972207465?text=Hola%20SSJ%20CONTRATISTAS,%20deseo%20solicitar%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20para%20un%20proyecto."
+      href="https://wa.me/51932393161?text=Hola%20SSJ%20CONTRATISTAS,%20deseo%20solicitar%20informaci%C3%B3n%20y%20cotizaci%C3%B3n%20para%20un%20proyecto."
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Cotizar por WhatsApp a SSJ Contratistas"

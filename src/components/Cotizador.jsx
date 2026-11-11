@@ -266,7 +266,7 @@ export default function Cotizador({ selectedService = '' }) {
                   className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-sm bg-cat px-6 py-3.5 font-display text-lg font-bold uppercase tracking-wider text-navy hover:bg-[#e8b900] transition-colors shadow-md cursor-pointer"
                 >
                   <Send size={18} />
-                  <span>Enviar Cotización a WhatsApp (+51 972 207 465)</span>
+                  <span>Enviar Cotización a WhatsApp (+51 932 393 161)</span>
                 </button>
 
                 <p className="text-center text-[11px] text-slate-400">

@@ -4,18 +4,26 @@ import { company, waLink } from '../data/site'
 export default function TopBar() {
   return (
     <div className="bg-slate-950 text-slate-300 text-xs py-2 px-4 hidden md:flex justify-between items-center border-b border-slate-800">
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-5">
         <span className="flex items-center gap-1.5 text-slate-300">
           <MapPin size={13} className="text-amber-500 shrink-0" aria-hidden="true" />
-          <span>{company.city}</span>
+          <span>Puno (Sede Antauta & Sede Juliaca)</span>
         </span>
         <span className="h-3 w-px bg-slate-800" aria-hidden="true" />
         <a
-          href={`mailto:${company.email}`}
+          href="mailto:comercial@ssjcontratistas.com"
           className="flex items-center gap-1.5 text-slate-300 transition-colors hover:text-white"
         >
           <Mail size={13} className="text-amber-500 shrink-0" aria-hidden="true" />
-          <span>{company.email}</span>
+          <span>comercial@ssjcontratistas.com</span>
+        </a>
+        <span className="h-3 w-px bg-slate-800" aria-hidden="true" />
+        <a
+          href="mailto:gerencia@ssjcontratistas.com"
+          className="flex items-center gap-1.5 text-slate-300 transition-colors hover:text-white"
+        >
+          <Mail size={13} className="text-amber-500 shrink-0" aria-hidden="true" />
+          <span>gerencia@ssjcontratistas.com</span>
         </a>
       </div>
 
@@ -36,4 +44,3 @@ export default function TopBar() {
     </div>
   )
 }
-

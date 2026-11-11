@@ -40,13 +40,6 @@ export default function Contact() {
     window.open(waLink(text), '_blank', 'noopener')
   }
 
-  const rows = [
-    [Phone, 'Teléfono / WhatsApp', company.phone, `tel:+${company.whatsapp}`],
-    [Mail, 'Correo', company.email, `mailto:${company.email}`],
-    [MapPin, 'Ubicación', `${company.city}. ${company.address}`],
-    [Clock, 'Horario', company.hours],
-  ]
-
   return (
     <section id="contacto" className="bg-paper py-20 lg:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2 lg:gap-20">
@@ -56,20 +49,95 @@ export default function Contact() {
           </p>
           <h2 className="font-display text-4xl font-bold text-navy sm:text-5xl">Canales de Contacto Directo</h2>
           <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-600">Comuníquese con nuestra oficina para coordinar requerimientos y visitas técnicas a faena.</p>
-          <ul className="mt-8 divide-y divide-navy/15 border-y border-navy/15">
-            {rows.map(([Icon, label, value, href]) => (
-              <li key={label} className="flex gap-4 py-4">
-                <Icon size={20} className="mt-1 shrink-0 text-navy" aria-hidden="true" />
+
+          <div className="mt-8 space-y-6 divide-y divide-navy/15 border-y border-navy/15 py-4">
+            {/* Teléfono / WhatsApp */}
+            <div className="flex gap-4 pt-2">
+              <Phone size={22} className="mt-1 shrink-0 text-amber-600" aria-hidden="true" />
+              <div>
+                <p className="font-semibold text-navy text-xs uppercase tracking-wider mb-1">Teléfono / WhatsApp Directo</p>
+                <a
+                  href={`https://wa.me/${company.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-slate-900 hover:text-amber-600 underline decoration-cat decoration-2 underline-offset-4"
+                >
+                  {company.phone}
+                </a>
+                <p className="text-xs text-slate-500 mt-0.5">Atención y cotizaciones inmediatas por WhatsApp</p>
+              </div>
+            </div>
+
+            {/* Correos Electrónicos */}
+            <div className="flex gap-4 pt-4">
+              <Mail size={22} className="mt-1 shrink-0 text-amber-600" aria-hidden="true" />
+              <div className="space-y-2">
+                <p className="font-semibold text-navy text-xs uppercase tracking-wider mb-1">Correos Electrónicos</p>
                 <div>
-                  <p className="font-semibold text-navy">{label}</p>
-                  {href ? <a href={href} className="underline decoration-cat decoration-2 underline-offset-4">{value}</a> : <p>{value}</p>}
+                  <span className="text-xs font-bold text-slate-500 block uppercase">Correo Comercial:</span>
+                  <a
+                    href="mailto:comercial@ssjcontratistas.com"
+                    className="text-slate-800 hover:text-amber-600 underline decoration-cat decoration-2 underline-offset-4 text-sm sm:text-base font-semibold"
+                  >
+                    comercial@ssjcontratistas.com
+                  </a>
                 </div>
-              </li>
-            ))}
-          </ul>
-          <Button href={waLink()} target="_blank" rel="noopener noreferrer" className="mt-8">Escribir por WhatsApp</Button>
+                <div>
+                  <span className="text-xs font-bold text-slate-500 block uppercase">Correo Gerencia:</span>
+                  <a
+                    href="mailto:gerencia@ssjcontratistas.com"
+                    className="text-slate-800 hover:text-amber-600 underline decoration-cat decoration-2 underline-offset-4 text-sm sm:text-base font-semibold"
+                  >
+                    gerencia@ssjcontratistas.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Ubicaciones / Sedes en Puno */}
+            <div className="flex gap-4 pt-4">
+              <MapPin size={22} className="mt-1 shrink-0 text-amber-600" aria-hidden="true" />
+              <div className="space-y-3 w-full">
+                <p className="font-semibold text-navy text-xs uppercase tracking-wider mb-1">Ubicaciones / Sedes en Puno</p>
+                
+                <div className="rounded-md bg-white p-3.5 border border-slate-200/90 shadow-2xs">
+                  <span className="inline-block text-xs font-bold text-amber-600 uppercase tracking-wide">
+                    Sede Antauta
+                  </span>
+                  <p className="text-sm text-slate-800 font-medium mt-0.5">
+                    Av. Unión Antauta N° 122 – Antauta – Melgar – Puno
+                  </p>
+                </div>
+
+                <div className="rounded-md bg-white p-3.5 border border-slate-200/90 shadow-2xs">
+                  <span className="inline-block text-xs font-bold text-amber-600 uppercase tracking-wide">
+                    Sede Juliaca
+                  </span>
+                  <p className="text-sm text-slate-800 font-medium mt-0.5">
+                    Av. Aeroperú Mz J Lt 02 – Juliaca – San Román – Puno
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Horario de Atención */}
+            <div className="flex gap-4 pt-4 pb-2">
+              <Clock size={22} className="mt-1 shrink-0 text-amber-600" aria-hidden="true" />
+              <div>
+                <p className="font-semibold text-navy text-xs uppercase tracking-wider mb-1">Horario de Atención</p>
+                <p className="text-sm text-slate-700 leading-relaxed font-medium">
+                  {company.hours}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <Button href={waLink()} target="_blank" rel="noopener noreferrer" className="mt-8">
+            Escribir por WhatsApp
+          </Button>
         </div>
-        <form onSubmit={submit} noValidate className="space-y-5 bg-white p-6 sm:p-8">
+
+        <form onSubmit={submit} noValidate className="space-y-5 bg-white p-6 sm:p-8 rounded-md border border-slate-200 shadow-sm">
           <Field id="nombre" label="Nombre" error={errors.nombre}>
             <input id="nombre" className={input} value={v.nombre} onChange={set('nombre')} autoComplete="name" aria-invalid={!!errors.nombre} aria-describedby={errors.nombre ? 'nombre-error' : undefined} />
           </Field>
@@ -85,7 +153,7 @@ export default function Contact() {
           <Field id="mensaje" label="Mensaje" error={errors.mensaje}>
             <textarea id="mensaje" rows="4" className={input} value={v.mensaje} onChange={set('mensaje')} aria-invalid={!!errors.mensaje} aria-describedby={errors.mensaje ? 'mensaje-error' : undefined} />
           </Field>
-          <button type="submit" className="w-full rounded-sm bg-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-navy-deep">
+          <button type="submit" className="w-full rounded-sm bg-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-navy-deep cursor-pointer">
             Enviar solicitud por WhatsApp
           </button>
         </form>

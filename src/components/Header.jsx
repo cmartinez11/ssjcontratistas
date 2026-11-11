@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import { nav } from '../data/site'
+import { Menu, X, Phone, Mail } from 'lucide-react'
+import { nav, company, waLink } from '../data/site'
 import { Button } from './ui'
 
 export default function Header() {
@@ -57,6 +57,26 @@ export default function Header() {
           <Button href="#cotizador" onClick={() => setOpen(false)} className="mt-4 w-full">
             Cotizar Proyecto
           </Button>
+
+          {/* Contacto Directo en Menú Móvil */}
+          <div className="mt-4 pt-4 border-t border-slate-200 text-xs text-slate-600 space-y-2.5">
+            <a
+              href={waLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 font-bold text-slate-900 hover:text-amber-600"
+            >
+              <Phone size={15} className="text-amber-600 shrink-0" />
+              <span>WhatsApp: {company.phone}</span>
+            </a>
+            <a
+              href="mailto:comercial@ssjcontratistas.com"
+              className="flex items-center gap-2 text-slate-700 hover:text-amber-600"
+            >
+              <Mail size={15} className="text-amber-600 shrink-0" />
+              <span>comercial@ssjcontratistas.com</span>
+            </a>
+          </div>
         </nav>
       )}
     </header>

@@ -3,11 +3,26 @@ import { servicesData } from './services'
 
 export const company = {
   name: 'SSJ Contratistas',
-  whatsapp: '51972207465',
-  phone: '+51 972 207 465',
-  email: 'gerencia@ssjcontratistas.com',
+  whatsapp: '51932393161',
+  phone: '+51 932 393 161',
+  email: 'comercial@ssjcontratistas.com',
+  emailGerencia: 'gerencia@ssjcontratistas.com',
+  emails: [
+    { label: 'Correo Comercial', email: 'comercial@ssjcontratistas.com' },
+    { label: 'Correo Gerencia', email: 'gerencia@ssjcontratistas.com' },
+  ],
   city: 'Puno, Perú',
-  address: 'Oficina Central Puno / Operaciones en Mina',
+  locations: [
+    {
+      name: 'Sede Antauta',
+      address: 'Av. Unión Antauta N° 122 – Antauta – Melgar – Puno',
+    },
+    {
+      name: 'Sede Juliaca',
+      address: 'Av. Aeroperú Mz J Lt 02 – Juliaca – San Román – Puno',
+    },
+  ],
+  address: 'Av. Unión Antauta N° 122 (Antauta) / Av. Aeroperú Mz J Lt 02 (Juliaca) – Puno',
   hours: 'Lunes a sábado, 7:00 a 19:00 | Atención de Emergencia 24/7 en Operaciones',
   social: [
     { label: 'Facebook', href: '#' },
