@@ -7,7 +7,7 @@ export default function TopBar() {
       <div className="flex items-center gap-5">
         <span className="flex items-center gap-1.5 text-slate-300">
           <MapPin size={13} className="text-amber-500 shrink-0" aria-hidden="true" />
-          <span>Puno (Sede Antauta & Sede Juliaca)</span>
+          <span>Puno - Perú</span>
         </span>
         <span className="h-3 w-px bg-slate-800" aria-hidden="true" />
         <a
