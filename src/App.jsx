@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import TopBar from './components/TopBar'
 import Header from './components/Header'
+import ClientsLogoMarquee from './components/ClientsLogoMarquee'
 import About from './components/About'
 import RegionalCommitment from './components/RegionalCommitment'
 import Services from './components/Services'
@@ -87,6 +88,9 @@ export default function App() {
       <main>
         {/* PORTADA / HERO CORREGIDA CON CAPAS Y Z-INDEX */}
         <Hero />
+
+        {/* CARRUSEL DE CLIENTES / OPERACIONES MINERAS */}
+        <ClientsLogoMarquee />
 
         {/* NOSOTROS */}
         <About />
