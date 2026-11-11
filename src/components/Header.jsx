@@ -12,7 +12,7 @@ export default function Header() {
           <img
             src="/images/logo-ssj-contratista.jpeg"
             alt="SSJ Contratistas"
-            className="h-10 md:h-12 w-auto object-contain"
+            className="h-14 md:h-16 w-auto object-contain"
           />
         </a>
 

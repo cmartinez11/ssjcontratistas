@@ -9,7 +9,7 @@ export default function Footer() {
             <img
               src="/images/logo-ssj-contratista.jpeg"
               alt="SSJ Contratistas"
-              className="h-12 md:h-14 w-auto rounded bg-white p-1.5 object-contain shadow-sm"
+              className="h-16 md:h-20 w-auto object-contain bg-white p-2 rounded-md shadow-sm"
             />
           </a>
           <p className="mt-4 max-w-xs text-sm">Construcción y servicios para minería. {company.city}.</p>
