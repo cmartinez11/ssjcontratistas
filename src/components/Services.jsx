@@ -82,7 +82,7 @@ export default function Services({ onSelectService }) {
             <div className="border-b border-slate-100 pb-5 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <p className="text-xs font-bold uppercase tracking-wider text-amber-600 mb-1">
-                  Especialidad Minera 0{activeService + 1}
+                  {current.badge || `Especialidad Minera ${(activeService + 1).toString().padStart(2, '0')}`}
                 </p>
                 <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight">
                   {current.title}
@@ -101,7 +101,7 @@ export default function Services({ onSelectService }) {
 
             {/* Descripción comercial concreta */}
             <p className="text-base text-slate-600 leading-relaxed mb-6">
-              {current.shortDesc}
+              {current.shortDesc || current.description}
             </p>
 
             {/* Lista de Alcances Técnicos con viñetas sobrias */}
@@ -110,7 +110,7 @@ export default function Services({ onSelectService }) {
                 Alcances Técnicos y Procedimientos Operativos:
               </h4>
               <ul className="space-y-2 text-sm text-slate-700">
-                {current.features.map((feature, i) => (
+                {(current.features || current.items || []).map((feature, i) => (
                   <li key={i} className="flex items-start leading-relaxed">
                     <span className="text-amber-500 font-bold mr-2 select-none">—</span>
                     <span>{feature}</span>

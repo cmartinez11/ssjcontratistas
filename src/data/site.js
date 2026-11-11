@@ -31,20 +31,24 @@ export const specializedServices = [
   {
     id: 'obras-civiles',
     title: 'Obras Civiles',
-    shortDesc: 'Movimiento de tierras masivo, plataformas de perforación, cimentaciones y edificaciones modulares para campamentos mineros.',
+    shortDesc: 'Desarrollo de ingeniería, consultoría y ejecución integral de obras civiles estructurales, movimiento masivo de tierras, saneamiento e infraestructura para el sector minero e industrial.',
     features: [
-      'Movimiento masivo de tierras, excavaciones y accesos viales en mina',
-      'Cimentaciones de concreto armado para molinos, chancadoras y tolvas',
-      'Plataformas de perforación, tajos y presas de relave',
-      'Construcción y habilitación de campamentos mineros modulares',
+      "Servicios de consultoría y proyectos de construcción civil.",
+      "Elaboración de ingeniería y expedientes técnicos para proyectos civiles.",
+      "Desarrollo y ejecución de proyectos en obras civiles estructurales, edificaciones y campamentos mineros modulares.",
+      "Cimentaciones de concreto armado para molinos, chancadoras y tolvas.",
+      "Movimiento masivo de tierras, habilitación de accesos viales, tajos, presas de relave y estabilización de taludes.",
+      "Ejecución de sistemas sanitarios, hidráulicos y construcción de saneamiento básico.",
+      "Obras civiles misceláneas en proyectos de minería e industriales.",
+      "Mantenimiento, remodelación y conservación de campamentos e infraestructura."
     ],
     images: [
       {
-        src: 'https://images.pexels.com/photos/8809473/pexels-photo-8809473.jpeg',
+        src: 'https://images.pexels.com/photos/6034140/pexels-photo-6034140.jpeg',
         alt: 'Obras Civiles: Cimentaciones y estructuras de concreto armado',
       },
       {
-        src: 'https://images.unsplash.com/photo-1580544859986-05322c53b1d4?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/10951145/pexels-photo-10951145.jpeg',
         alt: 'Obras Civiles: Movimiento de tierras y conformación de plataformas',
       },
     ],
@@ -82,11 +86,11 @@ export const specializedServices = [
     ],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/5759611/pexels-photo-5759611.jpeg',
         alt: 'Metalmecánica: Soldadura homologada y fabricación de estructuras',
       },
       {
-        src: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/8555598/pexels-photo-8555598.jpeg',
         alt: 'Metalmecánica: Montaje de naves y componentes industriales',
       },
     ],
@@ -115,22 +119,80 @@ export const specializedServices = [
   {
     id: 'mantenimiento-industrial',
     title: 'Mantenimiento Industrial',
-    shortDesc: 'Servicios integrales de mantenimiento preventivo y paradas de planta, cambio de componentes de desgaste y revestimientos.',
+    shortDesc: 'Servicios integrales de mantenimiento preventivo, correctivo y paradas de planta programadas 24/7 en sistemas de chancado, molienda, celdas de flotación y equipos de procesamiento minero e industrial.',
     features: [
-      'Gestión y ejecución de paradas de planta programadas 24/7',
-      'Mantenimiento electromecánico de sistemas de molienda y chancado',
-      'Reemplazo de placas y elementos de desgaste en tolvas y chutes',
-      'Aplicación de revestimientos antidesgaste y pintura epóxica industrial',
+      "Gestión y ejecución de paradas de planta programadas 24/7 en faenas mineras.",
+      "Mantenimiento integral de chancadoras (primarias, cónicas de pebbles, de quijada y HP: cambio de manto, excéntrica, cóncavos, spider y bowl liners).",
+      "Mantenimiento y cambio de componentes en fajas transportadoras (polines de carga, retorno, impacto, garland, alineamiento, bastidores y raspadores).",
+      "Reparación, mantenimiento y reemplazo de revestimientos y elementos de desgaste en tolvas, chutes de carga, descarga y transferencia.",
+      "Mantenimiento electromecánico de sistemas de molienda y procesamiento (liners de vertimill, espesadores, rotor, estator y celdas de flotación).",
+      "Mantenimiento de canaletas de recolección de concentrado, cajones de traspaso y transferencia.",
+      "Mantenimiento y atención de bombas sumergibles y barcazas de extracción.",
+      "Instalación, mantenimiento y cambio de tuberías HDPE, sistemas de flotación y aplicación de pintura epóxica / revestimientos antidesgaste."
     ],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-        alt: 'Mantenimiento Industrial: Intervención mecánica en equipos de planta',
+        src: 'https://images.pexels.com/photos/9389356/pexels-photo-9389356.jpeg',
+        alt: 'Mantenimiento Industrial: Instalacion y mantenimiento y cambio de tuberias HDPE.',
       },
       {
-        src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/28929545/pexels-photo-28929545.jpeg',
         alt: 'Mantenimiento Industrial: Inspección técnica y seguridad operativa',
       },
+    ],
+  },
+  {
+    id: 'parada-de-planta',
+    badge: 'ESPECIALIDAD MINERA 06',
+    title: 'Parada de Planta',
+    shortDesc: 'Planeación estratégica, gestión de activos y ejecución integral de paradas de planta programadas 24/7 en faenas mineras e industriales, optimizando tiempos de parada y garantizando cero accidentes.',
+    description: 'Planeación estratégica, gestión de activos y ejecución integral de paradas de planta programadas 24/7 en faenas mineras e industriales, optimizando tiempos de parada y garantizando cero accidentes.',
+    features: [
+      'Planeación estratégica con cronogramas detallados para minimizar tiempos de inactividad.',
+      'Aplicación de rigurosos protocolos de seguridad integral bajo norma y estándares mineros.',
+      'Intervenciones mecánicas y electromecánicas críticas con personal técnico altamente especializado.',
+      'Monitoreo y control tecnológico de vanguardia para asegurar el retorno rápido a la operación.',
+      'Gestión de activos, evaluación y certificación de componentes críticos en planta concentradora.',
+      'Mantenimiento mayor de chancadoras, molinos, espesadores, celdas de flotación y fajas transportadoras.',
+      'Despliegue rápido de cuadrillas y logística operativa para faenas en alta montaña 24/7.',
+      'Aseguramiento de calidad QA/QC y dossier técnico de entregables al finalizar la parada.'
+    ],
+    images: [
+      {
+        src: 'https://images.pexels.com/photos/38888656/pexels-photo-38888656.jpeg',
+        alt: 'Ejecución de parada de planta en minería SSJ Contratistas'
+      },
+      {
+        src: 'https://images.pexels.com/photos/12324202/pexels-photo-12324202.jpeg',
+        alt: 'Personal técnico en mantenimiento de planta industrial'
+      }
+    ],
+  },
+  {
+    id: 'electromecanica',
+    badge: 'ESPECIALIDAD MINERA 07',
+    title: 'Electromecánica',
+    shortDesc: 'Diseño, montaje y mantenimiento electromecánico integral en subestaciones, tableros de fuerza y control, sistemas de puesta a tierra y maquinaria industrial para minería e industria.',
+    description: 'Diseño, montaje y mantenimiento electromecánico integral en subestaciones, tableros de fuerza y control, sistemas de puesta a tierra y maquinaria industrial para minería e industria.',
+    features: [
+      'Mantenimiento de subestaciones eléctricas en media tensión y sistemas de baja tensión.',
+      'Desarrollo de proyectos electromecánicos industriales, diseño y ejecución de tableros eléctricos de fuerza y control.',
+      'Modificación, actualización de planos electromecánicos y dossiers técnicos.',
+      'Fabricación de estructuras de soporte para tableros, bandejas, canaletas y equipos eléctricos en general.',
+      'Reparación de equipos y máquinas industriales con mantenimiento predictivo, preventivo y correctivo.',
+      'Preparación, mantenimiento, mediciones y diagnóstico certificado de sistemas de puesta a tierra.',
+      'Montaje electromecánico de motores, bombas industriales y sistemas de accionamiento.',
+      'Inspección termográfica y pruebas de aislamiento en tableros y centros de control de motores (CCM).'
+    ],
+    images: [
+      {
+        src: 'https://images.pexels.com/photos/28942196/pexels-photo-28942196.jpeg',
+        alt: 'Mantenimiento electromecánico y tableros eléctricos SSJ Contratistas'
+      },
+      {
+        src: 'https://images.pexels.com/photos/33559451/pexels-photo-33559451.jpeg',
+        alt: 'Técnico especialista en tableros de fuerza y control'
+      }
     ],
   },
   {
@@ -145,11 +207,11 @@ export const specializedServices = [
     ],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/27354191/pexels-photo-27354191.jpeg',
         alt: 'Termofusión HDPE: Tendido de líneas de tubería de gran diámetro',
       },
       {
-        src: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/6509862/pexels-photo-6509862.jpeg',
         alt: 'Termofusión HDPE: Unión certificada y control de presión en campo',
       },
     ],
@@ -177,21 +239,31 @@ export const specializedServices = [
   },
   {
     id: 'alquiler-maquinaria',
-    title: 'Alquiler de Maquinaria Pesada',
-    shortDesc: 'Flota moderna de excavadoras sobre orugas, retroexcavadoras, cargadores frontales y volquetes con operadores certificados.',
+    title: 'Alquiler de Equipos',
+    shortDesc: 'Disponibilidad inmediata de flota propia y homologada de maquinaria pesada, equipos auxiliares y unidades de transporte para operaciones en alta montaña, con mantenimiento preventivo riguroso y operadores certificados.',
     features: [
-      'Excavadoras sobre orugas de 20 a 35 toneladas (Caterpillar / Komatsu)',
-      'Camiones volquetes 6x4 y 8x4 de alto tonelaje para acarreo minero',
-      'Tractores de oruga D6 / D8 y rodillos compactadores autopropulsados',
-      'Operadores homologados con récord Cero Accidentes y SCTR vigente',
+      'Alquiler de retroexcavadora, minicargador y minirodillo.',
+      'Alquiler de camionetas y camiones para minería e industria.',
+      'Alquiler de grupo electrógeno, generador de energía y torres de iluminación.',
+      'Alquiler de camiones cisterna para combustible y/o agua.',
+      'Alquiler de equipos de poder para construcción civil.',
+      'Alquiler de equipos de medición e instrumentación.'
     ],
     images: [
       {
-        src: 'https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/10410019/pexels-photo-10410019.jpeg',
         alt: 'Alquiler de Maquinaria: Excavadoras y volquetes Caterpillar en operación',
       },
       {
-        src: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.pexels.com/photos/14484391/pexels-photo-14484391.jpeg',
+        alt: 'Alquiler de Maquinaria: Flota pesada en faena minera y cantera',
+      },
+      {
+        src: 'https://images.pexels.com/photos/461789/pexels-photo-461789.jpeg',
+        alt: 'Alquiler de Maquinaria: Flota pesada en faena minera y cantera',
+      },
+      {
+        src: 'https://images.pexels.com/photos/31543919/pexels-photo-31543919.jpeg',
         alt: 'Alquiler de Maquinaria: Flota pesada en faena minera y cantera',
       },
     ],
