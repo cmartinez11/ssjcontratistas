@@ -8,7 +8,6 @@ export default function ClientsLogoMarquee() {
     { id: 'stantec', name: 'Stantec', src: '/images/logos/stantec.jpg' },
     { id: 'stracon', name: 'Stracon', src: '/images/logos/stracon.jpg' },
     { id: 'ur', name: 'UR', src: '/images/logos/ur.jpg' },
-    { id: 'volcan', name: 'Volcan', src: '/images/logos/volcan.jpg' },
     { id: 'wsp', name: 'WSP', src: '/images/logos/wsp.jpg' },
   ]
 
@@ -19,21 +18,21 @@ export default function ClientsLogoMarquee() {
     <section aria-label="Clientes y operaciones mineras" className="relative border-b border-slate-200/80 bg-slate-50 py-8 sm:py-10 overflow-hidden">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mb-5 sm:mb-6 text-center">
         <p className="text-xs sm:text-sm font-semibold tracking-wider text-slate-500 uppercase">
-          Empresas y operaciones vinculadas al sector minero e industrial
+          ELLOS CONFIAN EN NOSOTROS
         </p>
       </div>
 
       {/* Contenedor del Marquee con máscaras de degradado en los extremos */}
       <div className="relative w-full overflow-hidden">
         {/* Máscara de degradado izquierda */}
-        <div 
-          className="pointer-events-none absolute inset-y-0 left-0 z-20 w-16 sm:w-28 md:w-36 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent" 
+        <div
+          className="pointer-events-none absolute inset-y-0 left-0 z-20 w-16 sm:w-28 md:w-36 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent"
           aria-hidden="true"
         />
 
         {/* Máscara de degradado derecha */}
-        <div 
-          className="pointer-events-none absolute inset-y-0 right-0 z-20 w-16 sm:w-28 md:w-36 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent" 
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 z-20 w-16 sm:w-28 md:w-36 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent"
           aria-hidden="true"
         />
 
