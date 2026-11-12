@@ -144,7 +144,8 @@ export const servicesData = [
       "Construcción de bases para subestaciones eléctricas en interior mina.",
       "Construcción de bases para cámaras de perforación DDH y Raise Boring.",
       "Ejecución de obras civiles en minería subterránea para talleres mecánicos de socavón.",
-      "Servicios auxiliares esenciales para complementar la operatividad en minería subterránea."
+      "Servicios auxiliares esenciales para complementar la operatividad en minería subterránea.",
+      "Ejecución de obras civiles en minería subterránea para talleres mecánicos y para otros fines de uso"
     ],
     images: [
       { src: "https://images.unsplash.com/photo-1579407364450-481fe1dee146?auto=format&fit=crop&w=800&q=80", alt: "Minería Subterránea y Obras Civiles" },
@@ -162,7 +163,8 @@ export const servicesData = [
       "Alquiler de grupos electrógenos, generadores de energía y torres de iluminación.",
       "Alquiler de camiones cisterna para combustible y/o agua.",
       "Alquiler de equipos de poder para construcción civil.",
-      "Alquiler de equipos de medición e instrumentación."
+      "Alquiler de equipos de medición e instrumentación.",
+      "Alquiler de volquetes 6x4 y 8x4 para acarreo de mineral, desmonte y material de obra en superficie e interior mina."
     ],
     images: [
       { src: "https://images.pexels.com/photos/16042295/pexels-photo-16042295.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Alquiler de Maquinaria Pesada SSJ Contratistas" },

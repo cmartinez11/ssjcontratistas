@@ -7,12 +7,12 @@ export default function Header() {
   const [open, setOpen] = useState(false)
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-white shadow-xs">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
+      <div className="mx-auto flex min-h-[90px] md:min-h-[108px] lg:min-h-[124px] max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 py-2 md:py-3">
         <a href="#" className="flex items-center" aria-label="SSJ Contratistas, inicio">
           <img
             src="/images/logo-ssj-contratista.jpeg"
             alt="SSJ Contratistas"
-            className="h-14 md:h-16 w-auto object-contain"
+            className="h-20 md:h-24 lg:h-28 w-auto object-contain transition-all duration-300"
           />
         </a>
 

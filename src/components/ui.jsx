@@ -46,8 +46,8 @@ export function Logo({ light = false, className = '' }) {
         alt="SSJ Contratistas"
         className={
           light
-            ? 'h-16 md:h-20 w-auto object-contain bg-white p-2 rounded-md shadow-sm'
-            : 'h-14 md:h-16 w-auto object-contain'
+            ? 'h-24 md:h-32 w-auto object-contain bg-white p-3 rounded-xl shadow-md block'
+            : 'h-20 md:h-24 lg:h-28 w-auto object-contain transition-all duration-300'
         }
       />
     </a>

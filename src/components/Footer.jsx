@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src="/images/logo-ssj-contratista.jpeg"
               alt="SSJ Contratistas"
-              className="h-16 md:h-20 w-auto object-contain bg-white p-2 rounded-md shadow-sm"
+              className="h-24 md:h-32 w-auto object-contain bg-white p-3 rounded-xl shadow-md block"
             />
           </a>
           <p className="text-sm text-slate-300 leading-relaxed">
