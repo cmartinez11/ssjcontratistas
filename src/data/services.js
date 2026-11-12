@@ -143,7 +143,6 @@ export const servicesData = [
       "Habilitación y proyección de mangas de ventilación hacia punto de laboreo según estándar.",
       "Construcción de bases para subestaciones eléctricas en interior mina.",
       "Construcción de bases para cámaras de perforación DDH y Raise Boring.",
-      "Ejecución de obras civiles en minería subterránea para talleres mecánicos de socavón.",
       "Servicios auxiliares esenciales para complementar la operatividad en minería subterránea.",
       "Ejecución de obras civiles en minería subterránea para talleres mecánicos y para otros fines de uso"
     ],
