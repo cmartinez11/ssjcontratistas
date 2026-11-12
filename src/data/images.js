@@ -72,11 +72,11 @@ export const images = {
     },
     {
       id: 6,
-      title: 'Operación de Flota Pesada y Volquetes',
-      category: 'Alquiler de Maquinaria Pesada',
-      location: 'Cantera y Botaderos en Altura, Puno',
-      src: 'https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=800&q=80',
-      alt: 'Excavadoras y camiones volquetes en movimiento de tierras masivo',
+      title: 'Operación de Flota Pesada y Vehículos Livianos',
+      category: 'ALQUILER DE MAQUINARIA PESADA Y VEHÍCULOS',
+      location: 'U.M. San Rafael - Minsur S.A.',
+      src: '/images/proyectos/proyecto01.jpeg',
+      alt: 'Operación de Flota Pesada y Vehículos Livianos en U.M. San Rafael - Minsur S.A.',
     },
   ],
 }

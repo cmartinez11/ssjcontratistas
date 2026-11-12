@@ -16,7 +16,7 @@ export const servicesData = [
       "Movimiento masivo de tierras, habilitación de accesos viales y estabilización de taludes."
     ],
     images: [
-      { src: "https://images.pexels.com/photos/16042295/pexels-photo-16042295.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Obras Civiles y Movimiento de Tierras" },
+      { src: "images/servicios/obras-civiles.jpeg", alt: "Obras Civiles y Movimiento de Tierras" },
       { src: "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construcción Estructural en Mina" }
     ]
   },
@@ -36,7 +36,7 @@ export const servicesData = [
       "Supervisión integral de obras."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", alt: "Ingeniería y Diseño Estructural" },
+      { src: "images/servicios/ingenieria-modelado.jpeg", alt: "Ingeniería y Diseño Estructural" },
       { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", alt: "Modelado BIM y Supervisión QA/QC" }
     ]
   },
@@ -166,7 +166,7 @@ export const servicesData = [
       "Alquiler de volquetes 6x4 y 8x4 para acarreo de mineral, desmonte y material de obra en superficie e interior mina."
     ],
     images: [
-      { src: "https://images.pexels.com/photos/16042295/pexels-photo-16042295.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Alquiler de Maquinaria Pesada SSJ Contratistas" },
+      { src: "images/servicios/alquiler.jpeg", alt: "Alquiler de Maquinaria Pesada SSJ Contratistas" },
       { src: "https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Carguío y Transporte con Flota Propia" }
     ]
   },

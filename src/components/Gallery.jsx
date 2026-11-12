@@ -1,7 +1,11 @@
-import { MapPin, ArrowUpRight } from 'lucide-react'
+import { useState } from 'react'
+import { MapPin, ArrowUpRight, ZoomIn } from 'lucide-react'
 import { images } from '../data/images'
+import ImageLightbox from './ImageLightbox'
 
 export default function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null)
+
   return (
     <section id="proyectos" className="bg-white py-20 lg:py-28 border-t border-slate-200">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -34,14 +38,22 @@ export default function Gallery() {
               key={item.id}
               className="flex flex-col overflow-hidden rounded-sm border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow"
             >
-              {/* Imagen limpia sin pastillas flotantes */}
-              <div className="h-60 w-full overflow-hidden bg-slate-100">
+              {/* Imagen limpia con zoom al hacer clic */}
+              <div
+                onClick={() => setSelectedImage({ src: item.src, alt: item.title })}
+                className="h-60 w-full overflow-hidden bg-slate-100 cursor-zoom-in group relative"
+              >
                 <img
                   src={item.src}
                   alt={item.alt}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
+                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                  <span className="p-2.5 rounded-full bg-slate-900/80 text-white shadow-lg">
+                    <ZoomIn size={20} />
+                  </span>
+                </div>
               </div>
 
               {/* Información del Proyecto */}
@@ -59,13 +71,12 @@ export default function Gallery() {
                   </div>
                 </div>
 
-                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <span>Estándar Ley 29783</span>
+                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-end text-xs text-slate-500">
                   <a
                     href="#cotizador"
                     className="font-bold text-navy hover:text-amber-600 transition-colors"
                   >
-                    Cotizar similar &rarr;
+                    Cotizar similar →
                   </a>
                 </div>
               </div>
@@ -91,6 +102,9 @@ export default function Gallery() {
           </a>
         </div>
       </div>
+
+      {/* Modal / Lightbox de imagen en pantalla completa */}
+      <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
     </section>
   )
 }

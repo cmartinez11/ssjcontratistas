@@ -9,8 +9,10 @@ import {
   Cpu,
   Flame,
   CheckCircle2,
+  ZoomIn,
 } from 'lucide-react'
 import { specializedServices } from '../data/site'
+import ImageLightbox from './ImageLightbox'
 
 const plantStopPillars = [
   {
@@ -54,6 +56,7 @@ const specialistCards = [
 
 export default function Services({ onSelectService }) {
   const [activeService, setActiveService] = useState(0)
+  const [selectedImage, setSelectedImage] = useState(null)
 
   const current = specializedServices[activeService] || specializedServices[0]
 
@@ -301,13 +304,22 @@ export default function Services({ onSelectService }) {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {current.images && current.images.map((img, i) => (
-                      <div key={i} className="overflow-hidden rounded-md bg-slate-100">
+                      <div
+                        key={i}
+                        onClick={() => setSelectedImage(img)}
+                        className="group relative overflow-hidden rounded-md bg-slate-100 border border-slate-200 cursor-zoom-in"
+                      >
                         <img
                           src={img.src}
                           alt={img.alt}
-                          className="rounded-md h-56 w-full object-cover border border-slate-200"
+                          className="rounded-md h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
                         />
+                        <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                          <span className="p-2.5 rounded-full bg-slate-900/80 text-white shadow-lg">
+                            <ZoomIn size={20} />
+                          </span>
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -322,6 +334,9 @@ export default function Services({ onSelectService }) {
           ¿Tiene un proyecto que combina varias de estas especialidades? Gestionamos la obra civil, electromecánica y HDPE bajo una sola gerencia con un único contrato y cronograma unificado.
         </div>
       </div>
+
+      {/* Modal / Lightbox de imagen en pantalla completa */}
+      <ImageLightbox image={selectedImage} onClose={() => setSelectedImage(null)} />
     </section>
   )
 }
