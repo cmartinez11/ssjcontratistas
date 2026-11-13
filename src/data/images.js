@@ -10,7 +10,7 @@ export const images = {
 
   // Nosotros / About (Equipo técnico e ingenieros en campo)
   about: {
-    src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/servicios/alquiler.jpeg',
     alt: 'Equipo de ingenieros y especialistas de obra con EPP normado',
   },
 

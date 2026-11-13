@@ -1,6 +1,5 @@
 import { Target, Eye, ShieldCheck, Scale, Award, Users, Handshake, CheckCircle2 } from 'lucide-react'
 import { images } from '../data/images'
-import { Photo } from './ui'
 
 const corporateValues = [
   {
@@ -40,9 +39,16 @@ export default function About() {
     <section id="nosotros" className="py-20 lg:py-28 bg-white">
       <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
         {/* Presentación Principal */}
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 items-center">
-          <Photo {...images.about} className="aspect-[4/5] lg:col-span-5" />
-          <div className="lg:col-span-7">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="flex justify-center">
+            <img
+              src={images.about.src}
+              alt={images.about.alt}
+              className="w-full h-auto max-h-[680px] object-contain rounded-xl shadow-md mx-auto"
+              loading="lazy"
+            />
+          </div>
+          <div>
             <p className="text-xs font-bold tracking-widest text-amber-600 uppercase mb-2">
               Sobre SSJ Contratistas
             </p>
