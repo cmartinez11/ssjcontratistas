@@ -37,7 +37,7 @@ export const servicesData = [
     ],
     images: [
       { src: "images/servicios/ingenieria-modelado.jpeg", alt: "Ingeniería y Diseño Estructural" },
-      { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", alt: "Modelado BIM y Supervisión QA/QC" }
+      { src: "https://images.pexels.com/photos/14953886/pexels-photo-14953886.jpeg", alt: "Diseño de instalaciones sanitarias e hidráulicas" }
     ]
   },
   {
@@ -54,8 +54,8 @@ export const servicesData = [
       "Diseño, suministro, fabricación y montaje de chutes, tolvas, celdas, compuertas y tanques."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", alt: "Soldadura Homologada y Metalmecánica" },
-      { src: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80", alt: "Fabricación de Estructuras Pesadas" }
+      { src: "https://images.pexels.com/photos/5846268/pexels-photo-5846268.jpeg", alt: "" },
+      { src: "https://images.pexels.com/photos/2965260/pexels-photo-2965260.jpeg", alt: "" }
     ]
   },
   {
@@ -72,7 +72,7 @@ export const servicesData = [
     ],
     images: [
       { src: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80", alt: "Montaje Eléctrico de Media Tensión" },
-      { src: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80", alt: "Mallas a Tierra y Tableros MCC" }
+      { src: "https://images.pexels.com/photos/37589283/pexels-photo-37589283.png", alt: "Mallas a Tierra y Tableros MCC" }
     ]
   },
   {
@@ -93,7 +93,7 @@ export const servicesData = [
     ],
     images: [
       { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", alt: "Mantenimiento Mecánico de Chancadoras" },
-      { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", alt: "Mantenimiento de Fajas Transportadoras" }
+      { src: "https://images.pexels.com/photos/29181490/pexels-photo-29181490.jpeg", alt: "Mantenimiento de Fajas Transportadoras" }
     ]
   },
   {
@@ -109,8 +109,8 @@ export const servicesData = [
       "Instalación de válvulas tipo mariposa, pinch, compuerta, check y globo."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80", alt: "Termofusión de Tuberías HDPE" },
-      { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", alt: "Instalación de Geomembrana" }
+      { src: "https://images.pexels.com/photos/9389356/pexels-photo-9389356.jpeg", alt: "Termofusión de Tuberías HDPE" },
+      { src: "https://images.pexels.com/photos/9869318/pexels-photo-9869318.jpeg", alt: "Tuberias hdpe" }
     ]
   },
   {
@@ -128,8 +128,8 @@ export const servicesData = [
       "Alquiler de equipos topográficos certificados."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80", alt: "Topografía con GPS Diferencial" },
-      { src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", alt: "Levantamiento Topográfico en Campo" }
+      { src: "https://images.pexels.com/photos/4458210/pexels-photo-4458210.jpeg", alt: "Planos as-buil " },
+      { src: "https://images.pexels.com/photos/36930873/pexels-photo-36930873.jpeg", alt: "Levantamiento Topográfico en Campo" }
     ]
   },
   {
@@ -147,8 +147,8 @@ export const servicesData = [
       "Ejecución de obras civiles en minería subterránea para talleres mecánicos y para otros fines de uso"
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1579407364450-481fe1dee146?auto=format&fit=crop&w=800&q=80", alt: "Minería Subterránea y Obras Civiles" },
-      { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", alt: "Bases e Infraestructura en Socavón" }
+      { src: "https://images.pexels.com/photos/7910062/pexels-photo-7910062.jpeg", alt: "Perforadora rotativa sobre orugas" },
+      { src: "https://images.pexels.com/photos/29470000/pexels-photo-29470000.jpeg", alt: "Máquina perforadora de pilotes" }
     ]
   },
   {
@@ -188,8 +188,8 @@ export const servicesData = [
       "Fabricación de bandejas portacables, canaletas y soportes metálicos."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80", alt: "Tableros Electromecánicos y PLC" },
-      { src: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80", alt: "Automatización Industrial y Mantenimiento" }
+      { src: "https://images.pexels.com/photos/33694019/pexels-photo-33694019.jpeg", alt: "Tableros Electromecánicos y PLC" },
+      { src: "https://images.pexels.com/photos/40858144/pexels-photo-40858144.jpeg", alt: "Automatización Industrial y Mantenimiento" }
     ]
   },
   {
