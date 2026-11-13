@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { MapPin, ArrowUpRight, ZoomIn } from 'lucide-react'
-import { images } from '../data/images'
 import ImageLightbox from './ImageLightbox'
 
 export default function Gallery() {
@@ -9,13 +8,14 @@ export default function Gallery() {
   return (
     <section id="proyectos" className="bg-white py-20 lg:py-28 border-t border-slate-200">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        {/* Encabezado de la sección */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <p className="text-xs font-bold tracking-widest text-amber-600 uppercase mb-2">
-              Experiencia Operativa Comprobada
+              EXPERIENCIA OPERATIVA COMPROBADA
             </p>
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-navy">
-              Proyectos y Trabajos Ejecutados
+              UNO DE NUESTROS PROYECTOS
             </h2>
             <p className="mt-3 max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed">
               Registro de obras civiles, tendido de líneas HDPE, estructuras metalmecánicas y servicios mineros realizados en condiciones de alta exigencia climática y geográfica.
@@ -31,57 +31,77 @@ export default function Gallery() {
           </a>
         </div>
 
-        {/* Cuadrícula limpia de 3 columnas - Diseño Editorial */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {images.gallery.map((item) => (
+        {/* Contenedor principal del proyecto destacado (Grid de 2 columnas) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-slate-50 p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+          {/* Columna Izquierda: Fotografía con visor Lightbox */}
+          <div className="lg:col-span-6 flex flex-col">
             <div
-              key={item.id}
-              className="flex flex-col overflow-hidden rounded-sm border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow"
+              onClick={() =>
+                setSelectedImage({
+                  src: '/images/proyectos/proyecto01.jpeg',
+                  alt: 'Operación de Flota Pesada y Vehículos Livianos - U.M. San Rafael',
+                })
+              }
+              className="group relative h-full min-h-[320px] max-h-[500px] w-full overflow-hidden rounded-lg cursor-zoom-in shadow-sm bg-slate-200"
             >
-              {/* Imagen limpia con zoom al hacer clic */}
-              <div
-                onClick={() => setSelectedImage({ src: item.src, alt: item.title })}
-                className="h-60 w-full overflow-hidden bg-slate-100 cursor-zoom-in group relative"
-              >
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
-                  <span className="p-2.5 rounded-full bg-slate-900/80 text-white shadow-lg">
-                    <ZoomIn size={20} />
-                  </span>
-                </div>
-              </div>
-
-              {/* Información del Proyecto */}
-              <div className="p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-amber-600 mb-1.5">
-                    {item.category}
-                  </p>
-                  <h3 className="font-display text-xl sm:text-2xl font-bold text-navy leading-snug">
-                    {item.title}
-                  </h3>
-                  <div className="mt-2.5 flex items-center gap-1.5 text-xs text-slate-500">
-                    <MapPin size={13} className="text-amber-500 shrink-0" />
-                    <span>{item.location}</span>
-                  </div>
-                </div>
-
-                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-end text-xs text-slate-500">
-                  <a
-                    href="#cotizador"
-                    className="font-bold text-navy hover:text-amber-600 transition-colors"
-                  >
-                    Cotizar similar →
-                  </a>
-                </div>
+              <img
+                src="/images/proyectos/proyecto01.jpeg"
+                alt="Operación de Flota Pesada y Vehículos Livianos - U.M. San Rafael"
+                className="w-full h-full min-h-[320px] max-h-[500px] object-cover rounded-lg cursor-zoom-in shadow-sm transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                <span className="p-2.5 rounded-full bg-slate-900/80 text-white shadow-lg">
+                  <ZoomIn size={22} />
+                </span>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Columna Derecha: Información Operativa + Mapa Satelital */}
+          <div className="lg:col-span-6 flex flex-col justify-between space-y-5">
+            {/* Bloque de información superior */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wider text-amber-600 mb-1.5">
+                ALQUILER DE MAQUINARIA PESADA Y VEHÍCULOS
+              </p>
+              <h3 className="font-display text-2xl sm:text-3xl font-bold text-navy leading-snug">
+                Operación de Flota Pesada y Vehículos Livianos
+              </h3>
+              <div className="mt-2.5 flex items-center gap-1.5 text-xs sm:text-sm text-slate-600 font-medium">
+                <MapPin size={15} className="text-amber-500 shrink-0" />
+                <span>U.M. San Rafael - Minsur S.A. (Antauta, Melgar - Puno)</span>
+              </div>
+              <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                Despliegue y operación continua de flota pesada y camionetas 4x4 equipadas bajo estándares de seguridad minera en alta montaña.
+              </p>
+            </div>
+
+            {/* Bloque inferior con Mapa de la zona de trabajo */}
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+                Zona de Operaciones en Faena Minera:
+              </p>
+              <div className="w-full h-56 rounded-lg overflow-hidden border border-slate-200 shadow-inner">
+                <iframe
+                  title="Ubicación U.M. San Rafael - Minsur"
+                  src="https://maps.google.com/maps?q=Mina+San+Rafael+Antauta+Puno&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <div className="mt-3 flex items-center justify-end text-xs sm:text-sm">
+                <a
+                  href="#cotizador"
+                  className="font-bold text-navy hover:text-amber-600 transition-colors inline-flex items-center gap-1"
+                >
+                  <span>Cotizar proyecto similar</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Cierre de sección con llamada a la acción */}
