@@ -92,8 +92,8 @@ export const servicesData = [
       "Instalación y cambio de tuberías HDPE y sistemas de flotación."
     ],
     images: [
-      { src: "./public/images/servicios/mantenimiento-industrial01.jpeg", alt: "Mantenimiento Mecánico de Chancadoras" },
-      { src: "./public/images/servicios/mantenimiento-industrial02.jpeg", alt: "Mantenimiento de Fajas Transportadoras" }
+      { src: "/images/servicios/mantenimiento-industrial01.jpeg", alt: "Mantenimiento Mecánico de Chancadoras" },
+      { src: "/images/servicios/mantenimiento-industrial02.jpeg", alt: "Mantenimiento de Fajas Transportadoras" }
     ]
   },
   {
