@@ -71,8 +71,8 @@ export const servicesData = [
       "Mantenimiento, montaje e instalación de líneas aéreas de media tensión."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80", alt: "Montaje Eléctrico de Media Tensión" },
-      { src: "https://images.pexels.com/photos/37589283/pexels-photo-37589283.png", alt: "Mallas a Tierra y Tableros MCC" }
+      { src: "./public/images/servicios/obras-electricas01.jpeg", alt: "Montaje Eléctrico de Media Tensión" },
+      { src: "./public/images/servicios/obras-electricas02.jpeg", alt: "Mallas a Tierra y Tableros MCC" }
     ]
   },
   {
@@ -92,8 +92,8 @@ export const servicesData = [
       "Instalación y cambio de tuberías HDPE y sistemas de flotación."
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80", alt: "Mantenimiento Mecánico de Chancadoras" },
-      { src: "https://images.pexels.com/photos/29181490/pexels-photo-29181490.jpeg", alt: "Mantenimiento de Fajas Transportadoras" }
+      { src: "./public/images/servicios/mantenimiento-industrial01.jpeg", alt: "Mantenimiento Mecánico de Chancadoras" },
+      { src: "./public/images/servicios/mantenimiento-industrial02.jpeg", alt: "Mantenimiento de Fajas Transportadoras" }
     ]
   },
   {
@@ -147,8 +147,8 @@ export const servicesData = [
       "Ejecución de obras civiles en minería subterránea para talleres mecánicos y para otros fines de uso"
     ],
     images: [
-      { src: "https://images.pexels.com/photos/7910062/pexels-photo-7910062.jpeg", alt: "Perforadora rotativa sobre orugas" },
-      { src: "https://images.pexels.com/photos/29470000/pexels-photo-29470000.jpeg", alt: "Máquina perforadora de pilotes" }
+      { src: "./public/images/servicios/servicios-auxiliares01.jpeg", alt: "Perforadora rotativa sobre orugas" },
+      { src: "./public/images/servicios/servicios-auxiliares02.jpeg", alt: "Máquina perforadora de pilotes" }
     ]
   },
   {
