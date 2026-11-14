@@ -147,8 +147,8 @@ export const servicesData = [
       "Ejecución de obras civiles en minería subterránea para talleres mecánicos y para otros fines de uso"
     ],
     images: [
-      { src: "./images/servicios/servicios-auxiliares01.jpeg", alt: "Perforadora rotativa sobre orugas" },
-      { src: "./images/servicios/servicios-auxiliares02.jpeg", alt: "Máquina perforadora de pilotes" }
+      { src: "/images/servicios/servicios-auxiliares01.jpeg", alt: "Perforadora rotativa sobre orugas" },
+      { src: "/images/servicios/servicios-auxiliares02.jpeg", alt: "Máquina perforadora de pilotes" }
     ]
   },
   {
