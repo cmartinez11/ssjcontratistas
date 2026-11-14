@@ -71,8 +71,8 @@ export const servicesData = [
       "Mantenimiento, montaje e instalación de líneas aéreas de media tensión."
     ],
     images: [
-      { src: "./public/images/servicios/obras-electricas01.jpeg", alt: "Montaje Eléctrico de Media Tensión" },
-      { src: "./public/images/servicios/obras-electricas02.jpeg", alt: "Mallas a Tierra y Tableros MCC" }
+      { src: "/images/servicios/obras-electricas01.jpeg", alt: "Montaje Eléctrico de Media Tensión" },
+      { src: "/images/servicios/obras-electricas02.jpeg", alt: "Mallas a Tierra y Tableros MCC" }
     ]
   },
   {
