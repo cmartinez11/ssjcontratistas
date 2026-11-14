@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Send, CheckCircle2 } from 'lucide-react'
 import { company, specializedServices, waLink } from '../data/site'
 
-export default function Cotizador({ selectedService = '' }) {
+export default function Cotizador({ selectedService = '', onOpenLegal }) {
   const [form, setForm] = useState({
     nombre: '',
     empresa: '',
@@ -12,6 +12,7 @@ export default function Cotizador({ selectedService = '' }) {
     detalle: '',
   })
 
+  const [acceptedPrivacy, setAcceptedPrivacy] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
 
@@ -35,6 +36,10 @@ export default function Cotizador({ selectedService = '' }) {
     }
     if (!form.telefono.trim()) {
       setError('Por favor, ingrese un número de teléfono o WhatsApp de contacto.')
+      return
+    }
+    if (!acceptedPrivacy) {
+      setError('Por favor, acepte la Política de Privacidad para continuar.')
       return
     }
 
@@ -258,6 +263,31 @@ export default function Cotizador({ selectedService = '' }) {
                     placeholder="Describa brevemente metrajes estimados, fechas tentativas o especificaciones requeridas..."
                     className="w-full rounded-sm border border-slate-700 bg-slate-800 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-amber-500 focus:outline-none"
                   />
+                </div>
+
+                {/* Aceptación obligatoria de Política de Privacidad */}
+                <div className="pt-2">
+                  <div className="flex items-start gap-2.5">
+                    <input
+                      id="privacy-cotizador"
+                      type="checkbox"
+                      required
+                      checked={acceptedPrivacy}
+                      onChange={(e) => setAcceptedPrivacy(e.target.checked)}
+                      className="mt-0.5 h-4 w-4 rounded border-slate-700 bg-slate-800 text-amber-500 focus:ring-amber-400 cursor-pointer"
+                    />
+                    <label htmlFor="privacy-cotizador" className="text-xs text-slate-300 leading-snug cursor-pointer">
+                      He leído y acepto la{' '}
+                      <button
+                        type="button"
+                        onClick={() => onOpenLegal && onOpenLegal('privacy')}
+                        className="font-semibold text-amber-400 hover:text-amber-300 underline cursor-pointer"
+                      >
+                        Política de Privacidad
+                      </button>{' '}
+                      (Ley N° 29733 - Protección de Datos Personales del Perú).
+                    </label>
+                  </div>
                 </div>
 
                 {/* Botón de Envío */}

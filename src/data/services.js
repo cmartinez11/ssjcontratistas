@@ -16,7 +16,7 @@ export const servicesData = [
       "Movimiento masivo de tierras, habilitación de accesos viales y estabilización de taludes."
     ],
     images: [
-      { src: "images/servicios/obras-civiles03.jpeg", alt: "Obras Civiles y Movimiento de Tierras" },
+      { src: "images/servicios/obras-civiles03.jpeg", alt: "Vaciado de concreto armado para cimentación estructural en mina" },
       { src: "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construcción Estructural en Mina" }
     ]
   },

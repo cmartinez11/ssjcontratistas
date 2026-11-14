@@ -11,6 +11,7 @@ function validate(v) {
   if (v.nombre.trim().length < 3) e.nombre = 'Escriba su nombre completo.'
   if (!emailRe.test(v.contacto.trim()) && !phoneRe.test(v.contacto.trim())) e.contacto = 'Ingrese un correo o un teléfono válido.'
   if (v.mensaje.trim().length < 10) e.mensaje = 'Describa brevemente lo que necesita (mínimo 10 caracteres).'
+  if (!v.acceptedPrivacy) e.privacy = 'Debe aceptar la Política de Privacidad para continuar.'
   return e
 }
 
@@ -26,8 +27,8 @@ function Field({ id, label, error, children }) {
 
 const input = 'w-full rounded-sm border border-navy/30 bg-white px-3 py-2.5 focus:border-navy'
 
-export default function Contact() {
-  const [v, setV] = useState({ nombre: '', contacto: '', servicio: '', mensaje: '' })
+export default function Contact({ onOpenLegal }) {
+  const [v, setV] = useState({ nombre: '', contacto: '', servicio: '', mensaje: '', acceptedPrivacy: false })
   const [errors, setErrors] = useState({})
   const set = (k) => (e) => setV({ ...v, [k]: e.target.value })
 
@@ -153,6 +154,30 @@ export default function Contact() {
           <Field id="mensaje" label="Mensaje" error={errors.mensaje}>
             <textarea id="mensaje" rows="4" className={input} value={v.mensaje} onChange={set('mensaje')} aria-invalid={!!errors.mensaje} aria-describedby={errors.mensaje ? 'mensaje-error' : undefined} />
           </Field>
+          <div className="pt-1">
+            <div className="flex items-start gap-2.5">
+              <input
+                id="privacy-contact"
+                type="checkbox"
+                required
+                checked={v.acceptedPrivacy}
+                onChange={(e) => setV({ ...v, acceptedPrivacy: e.target.checked })}
+                className="mt-1 h-4 w-4 rounded border-slate-300 text-amber-500 focus:ring-amber-400 cursor-pointer"
+              />
+              <label htmlFor="privacy-contact" className="text-xs text-slate-600 leading-snug cursor-pointer">
+                He leído y acepto la{' '}
+                <button
+                  type="button"
+                  onClick={() => onOpenLegal && onOpenLegal('privacy')}
+                  className="font-semibold text-navy hover:text-amber-600 underline cursor-pointer"
+                >
+                  Política de Privacidad
+                </button>{' '}
+                (Ley N° 29733 - Protección de Datos Personales).
+              </label>
+            </div>
+            {errors.privacy && <p role="alert" className="mt-1 text-xs text-red-700 font-medium">{errors.privacy}</p>}
+          </div>
           <button type="submit" className="w-full rounded-sm bg-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-navy-deep cursor-pointer">
             Enviar solicitud por WhatsApp
           </button>

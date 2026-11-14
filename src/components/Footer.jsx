@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { company, nav } from '../data/site'
 
-export default function Footer() {
+export default function Footer({ onOpenLegal }) {
   return (
     <footer className="bg-navy-deep text-white/85">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4">
@@ -110,11 +110,33 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/15 py-5 px-4 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {company.name}. Todos los derechos reservados | Hecho con ❤️ por{' '}
-        <a href="https://www.femsperu.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-400">
-          FEMS PERU
-        </a>
+      <div className="border-t border-white/15 py-5 px-4 text-xs text-slate-400">
+        <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <p>
+            © {new Date().getFullYear()} {company.name}. Todos los derechos reservados | Hecho con ❤️ por{' '}
+            <a href="https://www.femsperu.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-400">
+              FEMS PERU
+            </a>
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs">
+            <button
+              type="button"
+              onClick={() => onOpenLegal && onOpenLegal('privacy')}
+              className="text-slate-300 hover:text-amber-400 underline transition-colors cursor-pointer"
+            >
+              Política de Privacidad
+            </button>
+            <span className="text-white/20 select-none" aria-hidden="true">|</span>
+            <button
+              type="button"
+              onClick={() => onOpenLegal && onOpenLegal('cookies')}
+              className="text-slate-300 hover:text-amber-400 underline transition-colors cursor-pointer"
+            >
+              Política de Cookies
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   )

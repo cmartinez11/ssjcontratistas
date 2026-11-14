@@ -11,6 +11,8 @@ import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
+import CookieBanner from './components/CookieBanner'
+import LegalModal from './components/LegalModal'
 
 export function Hero() {
   return (
@@ -72,9 +74,22 @@ export function Hero() {
 
 export default function App() {
   const [selectedService, setSelectedService] = useState('')
+  const [legalModal, setLegalModal] = useState({ isOpen: false, docType: 'privacy' })
 
   const handleSelectService = (serviceTitle) => {
     setSelectedService(serviceTitle)
+  }
+
+  const handleOpenLegal = (docType = 'privacy') => {
+    setLegalModal({ isOpen: true, docType })
+  }
+
+  const handleCloseLegal = () => {
+    setLegalModal((prev) => ({ ...prev, isOpen: false }))
+  }
+
+  const handleSwitchLegalDoc = (docType) => {
+    setLegalModal((prev) => ({ ...prev, docType }))
   }
 
   return (
@@ -102,7 +117,7 @@ export default function App() {
         <Services onSelectService={handleSelectService} />
 
         {/* COTIZADOR RÁPIDO B2B */}
-        <Cotizador selectedService={selectedService} />
+        <Cotizador selectedService={selectedService} onOpenLegal={handleOpenLegal} />
 
         {/* POR QUÉ SSJ / DIFERENCIALES */}
         <Differentials />
@@ -111,14 +126,25 @@ export default function App() {
         <Gallery />
 
         {/* CONTACTO Y ATENCIÓN */}
-        <Contact />
+        <Contact onOpenLegal={handleOpenLegal} />
       </main>
 
       {/* FOOTER */}
-      <Footer />
+      <Footer onOpenLegal={handleOpenLegal} />
 
       {/* BOTÓN FLOTANTE PERMANENTE DE WHATSAPP */}
       <FloatingWhatsApp />
+
+      {/* BANNER DE COOKIES */}
+      <CookieBanner onOpenCookiesPolicy={() => handleOpenLegal('cookies')} />
+
+      {/* MODAL LEGAL (POLÍTICA DE PRIVACIDAD / COOKIES) */}
+      <LegalModal
+        isOpen={legalModal.isOpen}
+        docType={legalModal.docType}
+        onClose={handleCloseLegal}
+        onSwitchDoc={handleSwitchLegalDoc}
+      />
     </>
   )
 }
