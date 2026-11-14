@@ -16,7 +16,7 @@ export const servicesData = [
       "Movimiento masivo de tierras, habilitación de accesos viales y estabilización de taludes."
     ],
     images: [
-      { src: "images/servicios/obras-civiles.jpeg", alt: "Obras Civiles y Movimiento de Tierras" },
+      { src: "images/servicios/obras-civiles03.jpeg", alt: "Obras Civiles y Movimiento de Tierras" },
       { src: "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=800", alt: "Construcción Estructural en Mina" }
     ]
   },
@@ -54,8 +54,8 @@ export const servicesData = [
       "Diseño, suministro, fabricación y montaje de chutes, tolvas, celdas, compuertas y tanques."
     ],
     images: [
-      { src: "https://images.pexels.com/photos/5846268/pexels-photo-5846268.jpeg", alt: "" },
-      { src: "https://images.pexels.com/photos/2965260/pexels-photo-2965260.jpeg", alt: "" }
+      { src: "images/servicios/metalmecanica01.jpeg", alt: "" },
+      { src: "images/servicios/metalmecanica02.jpeg", alt: "" }
     ]
   },
   {
